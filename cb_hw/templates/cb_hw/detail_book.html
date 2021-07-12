@@ -1,0 +1,13 @@
+{% extends 'cb_hw/base.html' %}
+{% block title %}{{ book.name }}{% endblock %}
+{% block content %}
+    <p>Name: {{ book.name }}</p>
+    <p>Authors: {{ book.authors }}</p>
+    <p>Pages: {{ book.pages }}</p>
+    <p>Price: {{ book.price }}</p>
+    <p>Publisher: {{ book.publisher }}</p>
+    <p>Pubdate: {{ book.pubdate }}</p>
+    <p>Comment: {{ book.comment }}</p>
+    <form action="/update/{{ book.id }}"><button type="submit">Update</button> </form>
+    <form action="/delete/{{ book.id }}"><button type="submit">Delete</button> </form>
+{% endblock %}

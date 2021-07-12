@@ -1,0 +1,7 @@
+{% extends 'cb_hw/base.html' %}
+{% block title %}{{ model.name }}{% endblock %}
+{% block content %}
+    <h1>Publisher company name: {{ model.name }}</h1>
+    <form action="/update/{{ model.id }}"><button type="submit">Update</button> </form>
+    <form action="/delete/{{ model.id }}"><button type="submit">Delete</button> </form>
+{% endblock %}

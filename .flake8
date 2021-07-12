@@ -1,0 +1,4 @@
+[flake8]
+max-line-length=225
+exclude=venv,migrations,tests,dump.py
+ignore=E128,A003,E303,E731,A002

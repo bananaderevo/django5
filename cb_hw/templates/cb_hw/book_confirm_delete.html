@@ -1,0 +1,10 @@
+{% extends 'cb_hw/base.html' %}
+{% block title %}Delete{% endblock %}
+{% block content %}
+    <form action="" method="post">
+    {% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <input type="submit" value="Confirm" />
+        <a href="/detail/{{ object.id }}" class="btn btn-default"><button type="button">Cancel</button></a>
+</form>
+{% endblock %}

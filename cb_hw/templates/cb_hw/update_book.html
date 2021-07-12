@@ -1,0 +1,10 @@
+{% extends 'cb_hw/base.html' %}
+{% block title %}Update{% endblock %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <p>Name: {{ form.name }}</p>
+        <p>Info: {{ form.info }}</p>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
