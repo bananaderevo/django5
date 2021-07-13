@@ -1,7 +1,8 @@
-from django.shortcuts import render, HttpResponseRedirect
-from .models import Author, Book, Store, Publisher
-from django.views.generic import DetailView, ListView, UpdateView, DeleteView, CreateView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import HttpResponseRedirect, render
+from django.views.generic import CreateView, DeleteView, DetailView, ListView, UpdateView
+
+from .models import Author, Book, Publisher, Store
 
 
 def main(request):
